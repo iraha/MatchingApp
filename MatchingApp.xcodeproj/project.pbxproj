@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37405462B8F88E4CE8204717 /* Pods_MatchingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD9231C66FCE0A916F38149 /* Pods_MatchingApp.framework */; };
 		73631F5F22DF26D40034CFA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73631F5E22DF26D40034CFA9 /* AppDelegate.swift */; };
 		73631F6122DF26D40034CFA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73631F6022DF26D40034CFA9 /* ViewController.swift */; };
 		73631F6622DF26D80034CFA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73631F6522DF26D80034CFA9 /* Assets.xcassets */; };
@@ -15,6 +16,11 @@
 		73631F7322DF34500034CFA9 /* ViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73631F7222DF34500034CFA9 /* ViewController+UI.swift */; };
 		73631F7522DF366C0034CFA9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73631F7422DF366C0034CFA9 /* SignUpViewController.swift */; };
 		73631F7722DF3CBB0034CFA9 /* SignUpViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73631F7622DF3CBB0034CFA9 /* SignUpViewController+UI.swift */; };
+		73631F7922DF757C0034CFA9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73631F7822DF757C0034CFA9 /* SignInViewController.swift */; };
+		73631F7B22DF78B90034CFA9 /* SignInViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73631F7A22DF78B90034CFA9 /* SignInViewController+UI.swift */; };
+		73631F7D22DF7D480034CFA9 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73631F7C22DF7D480034CFA9 /* ForgotPasswordViewController.swift */; };
+		73631F7F22DF7D790034CFA9 /* ForgotPasswordViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73631F7E22DF7D790034CFA9 /* ForgotPasswordViewController+UI.swift */; };
+		73631F8122DFF7A70034CFA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73631F8022DFF7A70034CFA9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,14 @@
 		73631F7222DF34500034CFA9 /* ViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UI.swift"; sourceTree = "<group>"; };
 		73631F7422DF366C0034CFA9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		73631F7622DF3CBB0034CFA9 /* SignUpViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+UI.swift"; sourceTree = "<group>"; };
+		73631F7822DF757C0034CFA9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		73631F7A22DF78B90034CFA9 /* SignInViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+UI.swift"; sourceTree = "<group>"; };
+		73631F7C22DF7D480034CFA9 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		73631F7E22DF7D790034CFA9 /* ForgotPasswordViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForgotPasswordViewController+UI.swift"; sourceTree = "<group>"; };
+		73631F8022DFF7A70034CFA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C0062832F86D0F5EF4ECD163 /* Pods-MatchingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchingApp.debug.xcconfig"; path = "Target Support Files/Pods-MatchingApp/Pods-MatchingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CCD9231C66FCE0A916F38149 /* Pods_MatchingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatchingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E15B833EE35C59E32D7D61BB /* Pods-MatchingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchingApp.release.xcconfig"; path = "Target Support Files/Pods-MatchingApp/Pods-MatchingApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37405462B8F88E4CE8204717 /* Pods_MatchingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +61,8 @@
 			children = (
 				73631F5D22DF26D40034CFA9 /* MatchingApp */,
 				73631F5C22DF26D40034CFA9 /* Products */,
+				A3C396EA0AE00E493290AAD8 /* Pods */,
+				8FF81DFC6B9287D61CA49C6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,14 +80,36 @@
 				73631F5E22DF26D40034CFA9 /* AppDelegate.swift */,
 				73631F6022DF26D40034CFA9 /* ViewController.swift */,
 				73631F7222DF34500034CFA9 /* ViewController+UI.swift */,
+				73631F7C22DF7D480034CFA9 /* ForgotPasswordViewController.swift */,
+				73631F7E22DF7D790034CFA9 /* ForgotPasswordViewController+UI.swift */,
 				73631F7022DF293E0034CFA9 /* Welcome.storyboard */,
-				73631F7622DF3CBB0034CFA9 /* SignUpViewController+UI.swift */,
+				73631F7822DF757C0034CFA9 /* SignInViewController.swift */,
+				73631F7A22DF78B90034CFA9 /* SignInViewController+UI.swift */,
 				73631F7422DF366C0034CFA9 /* SignUpViewController.swift */,
+				73631F7622DF3CBB0034CFA9 /* SignUpViewController+UI.swift */,
 				73631F6522DF26D80034CFA9 /* Assets.xcassets */,
 				73631F6722DF26D80034CFA9 /* LaunchScreen.storyboard */,
+				73631F8022DFF7A70034CFA9 /* GoogleService-Info.plist */,
 				73631F6A22DF26D80034CFA9 /* Info.plist */,
 			);
 			path = MatchingApp;
+			sourceTree = "<group>";
+		};
+		8FF81DFC6B9287D61CA49C6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCD9231C66FCE0A916F38149 /* Pods_MatchingApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3C396EA0AE00E493290AAD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0062832F86D0F5EF4ECD163 /* Pods-MatchingApp.debug.xcconfig */,
+				E15B833EE35C59E32D7D61BB /* Pods-MatchingApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73631F6D22DF26D80034CFA9 /* Build configuration list for PBXNativeTarget "MatchingApp" */;
 			buildPhases = (
+				20C6BC85A68D85F3F5097953 /* [CP] Check Pods Manifest.lock */,
 				73631F5722DF26D40034CFA9 /* Sources */,
 				73631F5822DF26D40034CFA9 /* Frameworks */,
 				73631F5922DF26D40034CFA9 /* Resources */,
+				98880761F348A96F6AC40588 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73631F6922DF26D80034CFA9 /* LaunchScreen.storyboard in Resources */,
+				73631F8122DFF7A70034CFA9 /* GoogleService-Info.plist in Resources */,
 				73631F7122DF293E0034CFA9 /* Welcome.storyboard in Resources */,
 				73631F6622DF26D80034CFA9 /* Assets.xcassets in Resources */,
 			);
@@ -139,13 +181,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20C6BC85A68D85F3F5097953 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MatchingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98880761F348A96F6AC40588 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MatchingApp/Pods-MatchingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MatchingApp/Pods-MatchingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MatchingApp/Pods-MatchingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		73631F5722DF26D40034CFA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73631F7D22DF7D480034CFA9 /* ForgotPasswordViewController.swift in Sources */,
 				73631F7322DF34500034CFA9 /* ViewController+UI.swift in Sources */,
+				73631F7B22DF78B90034CFA9 /* SignInViewController+UI.swift in Sources */,
 				73631F6122DF26D40034CFA9 /* ViewController.swift in Sources */,
+				73631F7F22DF7D790034CFA9 /* ForgotPasswordViewController+UI.swift in Sources */,
+				73631F7922DF757C0034CFA9 /* SignInViewController.swift in Sources */,
 				73631F7522DF366C0034CFA9 /* SignUpViewController.swift in Sources */,
 				73631F5F22DF26D40034CFA9 /* AppDelegate.swift in Sources */,
 				73631F7722DF3CBB0034CFA9 /* SignUpViewController+UI.swift in Sources */,
@@ -284,6 +372,7 @@
 		};
 		73631F6E22DF26D80034CFA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0062832F86D0F5EF4ECD163 /* Pods-MatchingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +391,7 @@
 		};
 		73631F6F22DF26D80034CFA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E15B833EE35C59E32D7D61BB /* Pods-MatchingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -82,10 +82,10 @@ extension SignUpViewController {
     }
     func setupSignInButton() {
         
-        let attributedText = NSMutableAttributedString(string: "Already have an account?" , attributes: [NSMutableAttributedString.Key.font : UIFont.systemFont(ofSize: 14), NSMutableAttributedString.Key.foregroundColor : UIColor(white: 0, alpha: 0.5)
+        let attributedText = NSMutableAttributedString(string: "Already have an account? " , attributes: [NSMutableAttributedString.Key.font : UIFont.systemFont(ofSize: 14), NSMutableAttributedString.Key.foregroundColor : UIColor(white: 0, alpha: 0.5)
             ])
         
-        let attributedSubText = NSMutableAttributedString(string: "Sign In" , attributes: [NSMutableAttributedString.Key.font : UIFont.systemFont(ofSize: 18), NSMutableAttributedString.Key.foregroundColor : UIColor.black
+        let attributedSubText = NSMutableAttributedString(string: "Sign In" , attributes: [NSMutableAttributedString.Key.font : UIFont.systemFont(ofSize: 16), NSMutableAttributedString.Key.foregroundColor : UIColor.black
             ])
         
         attributedText.append(attributedSubText)
