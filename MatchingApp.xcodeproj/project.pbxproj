@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		37405462B8F88E4CE8204717 /* Pods_MatchingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD9231C66FCE0A916F38149 /* Pods_MatchingApp.framework */; };
+		731BBE2D22ED32A800B63D98 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731BBE2C22ED32A800B63D98 /* Api.swift */; };
+		731BBE2F22ED336F00B63D98 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731BBE2E22ED336F00B63D98 /* UserApi.swift */; };
 		73631F5F22DF26D40034CFA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73631F5E22DF26D40034CFA9 /* AppDelegate.swift */; };
 		73631F6122DF26D40034CFA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73631F6022DF26D40034CFA9 /* ViewController.swift */; };
 		73631F6622DF26D80034CFA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73631F6522DF26D80034CFA9 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		731BBE2C22ED32A800B63D98 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		731BBE2E22ED336F00B63D98 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		73631F5B22DF26D40034CFA9 /* MatchingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73631F5E22DF26D40034CFA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73631F6022DF26D40034CFA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				73631F7A22DF78B90034CFA9 /* SignInViewController+UI.swift */,
 				73631F7422DF366C0034CFA9 /* SignUpViewController.swift */,
 				73631F7622DF3CBB0034CFA9 /* SignUpViewController+UI.swift */,
+				731BBE2E22ED336F00B63D98 /* UserApi.swift */,
+				731BBE2C22ED32A800B63D98 /* Api.swift */,
 				73631F6522DF26D80034CFA9 /* Assets.xcassets */,
 				73631F6722DF26D80034CFA9 /* LaunchScreen.storyboard */,
 				73631F8022DFF7A70034CFA9 /* GoogleService-Info.plist */,
@@ -236,7 +242,9 @@
 				73631F7922DF757C0034CFA9 /* SignInViewController.swift in Sources */,
 				73631F7522DF366C0034CFA9 /* SignUpViewController.swift in Sources */,
 				73631F5F22DF26D40034CFA9 /* AppDelegate.swift in Sources */,
+				731BBE2D22ED32A800B63D98 /* Api.swift in Sources */,
 				73631F7722DF3CBB0034CFA9 /* SignUpViewController+UI.swift in Sources */,
+				731BBE2F22ED336F00B63D98 /* UserApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

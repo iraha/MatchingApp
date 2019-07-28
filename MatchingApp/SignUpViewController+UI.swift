@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 extension SignUpViewController {
     
@@ -23,7 +24,19 @@ extension SignUpViewController {
     func setupAvatar() {
         avatar.layer.cornerRadius = 40
         avatar.clipsToBounds = true
+        avatar.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(presentPicker))
+        avatar.addGestureRecognizer(tapGesture)
     }
+    
+    @objc func presentPicker() {
+        let picker = UIImagePickerController()
+        picker.sourceType = .photoLibrary
+        picker.allowsEditing = true
+        picker.delegate = self
+        self.present(picker, animated: true, completion: nil)
+    }
+ 
     func setupFullNameTextField() {
         
         fullnameContainerView.layer.borderWidth = 1
@@ -91,8 +104,56 @@ extension SignUpViewController {
         attributedText.append(attributedSubText)
         signInButton.setAttributedTitle(attributedText, for: UIControl.State.normal)
         
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func valiateFields() {
+        guard let username = self.fullnameTextField.text, !username.isEmpty else {
+            ProgressHUD.showError("Please enter username")
+            return
+        }
+        
+        guard let email = self.emailTextField.text, !email.isEmpty else {
+            ProgressHUD.showError("Please enter email")
+            return
+        }
+        
+        guard let password = self.passwordTextField.text, !password.isEmpty else {
+            ProgressHUD.showError("Please enter password")
+            return
+        }
+    }
+    
+    
+    func signUp() {
+        
+        Api.User.signUp(withUsrname: self.fullnameTextField.text!, email: self.emailTextField.text!, password: self.passwordTextField.text!, image: self.image, onSuccess: {
+            print("Done")
+        }) { (errorMessage) in
+            print(errorMessage)
+        }
         
     }
     
+}
+
+
+extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let imageSelected = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            image = imageSelected
+            avatar.image = imageSelected
+        }
+        if let imageOriginal = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            image = imageOriginal
+            avatar.image = imageOriginal
+        }
+        
+        picker.dismiss(animated: true, completion: nil)
+    }
     
 }

@@ -9,6 +9,8 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import FirebaseStorage
+import ProgressHUD
 
 
 class SignUpViewController: UIViewController {
@@ -23,6 +25,8 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var signInButton: UIButton!
+    
+    var image: UIImage? = nil
     
     
 
@@ -48,36 +52,13 @@ class SignUpViewController: UIViewController {
         
     }
     
+    
+    
     @IBAction func signUpButtonDidTapped(_ sender: Any) {
+        self.view.endEditing(true)
+        self.valiateFields()
+        self.signUp()
         
-        Auth.auth().createUser(withEmail: "test02@gmail.com", password: "000000") { (authDataResult, error) in
-            
-            if error != nil {
-                print(error!.localizedDescription)
-                return
-            }
-            if let authData = authDataResult {
-                print(authData.user.email)
-                
-                let dict: Dictionary<String, Any> = [
-                    
-                    "uid": authData.user.uid,
-                    "email": authData.user.email,
-                    "profileImageUrl": "",
-                    "status": "Welcome to MatchingApp"
-                    
-                ]
-                
-                Database.database().reference().child("users")
-                    .child(authData.user.uid).updateChildValues(dict, withCompletionBlock: { (error, ref) in
-                        if error == nil {
-                            print("Done")
-                        }
-                    })
-                
-            }
-            
-        }
         
     }
     
